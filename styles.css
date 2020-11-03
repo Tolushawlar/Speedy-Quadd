@@ -1,0 +1,228 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.side1{
+    width: 4vw;
+    background-color: rgb(182, 236, 236);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.side1 .logo img{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
+.side1 .icons img{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    padding: 4px;
+}
+
+.side2{
+    background-color: #0392bf;
+    width: 96vw;
+}
+
+.side2 .left svg{
+    fill: white;
+}
+.side2 .nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    margin-left: 40px;
+}
+
+.side2 .nav-bar .left img{
+    width: 20px;
+    height: 20px;
+}
+
+.side2 .nav-bar .right a{
+   padding: 15px;
+   color: white;
+    text-decoration: none;
+}
+
+.side2 .nav-bar .left{
+    padding: 10px;
+}
+
+
+.side2 .nav-bar .right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.side2 .body-content{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.side2 .body-content .product-image{
+    width: 50vw;
+}
+
+.side2 .body-content .desc{
+    margin-bottom: 130px;
+}
+
+.body-content .desc .select-color{
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    align-items: center;
+    color: white;
+    font-size: 13px;
+}
+
+.body-content .desc .select-color p{
+    margin-right: 50px;
+}
+.body-content .desc .select-color button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-color: white;
+    border-width: 1px;
+}
+
+.body-content .product-dropdown{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    align-items: center;
+    color: white;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.body-content .product-dropdown select{
+    margin-left: 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+    width: 130px;
+}
+
+
+.body-content .product-dropdown select::placeholder{
+    color: white;
+}
+
+.img-text{
+    position: absolute;
+    color: white;
+    bottom: 50px;
+    left: 210px;
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 50px;
+    font-weight: normal;
+}
+
+.qq{
+    margin-top: -2px;
+}
+
+.body-content .product-title{
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+}
+
+.body-content .product-title img{
+    width: 18px;
+}
+
+.body-content .product-price{
+    color: white;
+}
+.body-content .product-id{
+    color: rgb(192, 189, 189);
+    margin-top: -30px;
+}
+.body-content .product-desc{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    line-height: 21px;
+    font-weight: 2px !important;
+}
+
+.body-content .product-order button{
+    color: white;
+    font-weight: bold;
+    background-color: #ED48BA;
+    width: 150px;
+    padding: 6px;
+    border: 0px solid white;
+}
+
+
+
+
+@media only screen and (max-width:
+600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .side1{
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+    }
+    .side1 .icons{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .side2{
+        height: 100vh;
+        width: 100vw;
+    }
+    .side2 .body-content{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        justify-content: space-between;
+    }
+
+
+    .side2 .nav-bar{
+        width: 100vw;
+    }
+    .side2 .nav-bar .left{
+        display: none;
+    }
+    .side2 .body-content .product-image{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        bottom: 400px;
+        right: 200px;
+        }
+        .side2 .body-content .desc{
+            margin-top: 100px;
+        }
+}
