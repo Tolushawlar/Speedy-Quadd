@@ -225,7 +225,7 @@ body{
     .side2 .body-content .product-image{
         position: relative;
         right: 150px;
-        bottom: 600px;
+        bottom: 400px;
     }
     .side2 .body-content .desc{
         display: flex;
@@ -234,7 +234,7 @@ body{
     }
     .side2 .body-content .desc{
         position: relative;
-        top: 200px;
+        top: 150px;
         right: 100px;
     }
     .side2 .body-content .desc .product-title span{
