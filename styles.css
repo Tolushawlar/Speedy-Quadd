@@ -186,43 +186,58 @@ body{
     .container{
         display: flex;
         flex-direction: column;
+        height: 1000px !important;
+        overflow-x: hidden;
     }
     .side1{
         display: flex;
         flex-direction: row;
+        justify-content: space-between !important;
         width: 100vw;
     }
     .side1 .icons{
         display: flex;
         flex-direction: row;
     }
-
     .side2{
-        height: 100vh;
-        width: 100vw;
-    }
-    .side2 .body-content{
+        height: 1700px !important;
+        width: 100vw !important;
         display: flex;
         flex-direction: column;
-        width: 100vw;
-        justify-content: space-between;
     }
-
-
     .side2 .nav-bar{
-        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 20px;
+        position: relative;
+        right: 55px;
+        font-size: 12px;
     }
     .side2 .nav-bar .left{
         display: none;
     }
-    .side2 .body-content .product-image{
-        width: 200px;
-        height: 200px;
+
+    .img-text{
         position: relative;
-        bottom: 400px;
-        right: 200px;
-        }
-        .side2 .body-content .desc{
-            margin-top: 100px;
-        }
+        bottom: 700px;
+    }
+    .side2 .body-content .product-image{
+        position: relative;
+        right: 150px;
+        bottom: 200px;
+    }
+    .side2 .body-content .desc{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .side2 .body-content .desc{
+        position: relative;
+        top: 300px;
+        right: 100px;
+    }
+    .side2 .body-content .desc .product-title span{
+        position: relative;
+        right: 10px;
 }
