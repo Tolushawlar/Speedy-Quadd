@@ -11,12 +11,12 @@
     <div class="container">
         <div class="side1">
             <div class="logo">
-                <img src="images/logo.png"/>
+             <a href="#"><img src="images/logo.png"/></a>
             </div>
             <div class="icons">
-                <img src="images/icons8-facebook.svg"/>
-                <img src="images/icons8-instagram.svg"/>
-                <img src="images/icons8-twitter.svg" style="margin-bottom: 10px;"/>
+                <a href="#"><img src="images/icons8-facebook.svg"/></a>
+                <a href="#"><img src="images/icons8-instagram.svg"/></a>
+                <a href="#"><img src="images/icons8-twitter.svg" style="margin-bottom: 10px;"/></a>
             </div>
         </div>
         <div class="side2" id="side2">
@@ -24,12 +24,11 @@
                 <div class="right">
                     <a href="#">Home</a>
                     <a href="#">Products</a>
-                    <a href="#">Categories</a>
                     <a href="#">Contact</a>
                     <a href="#">About</a>
                 </div>
                 <div class="left">
-                    <img src="images/shopping-cart.svg" />
+                    <a href="#"><img src="images/shopping-cart.svg" /></a>
                 </div>
             </div>
             <div class="body-content">
@@ -63,16 +62,16 @@
                     </div>
                     <div class="select-color">
                         <p>Color</p> 
-                        <button style="background-color: #0392BF; margin-right:5px" onclick="changeBodyBg('');"></button>
-                        <button style="background-color: #ED48BA;margin-right:5px" onclick="changeBodyBg('#ED48BA');"></button>
+                        <button style="background-color: #0392BF; margin-right:5px" onclick="changeBodyBg('#0392BF'); changeBtn('#ED48BA');"></button>
+                        <button style="background-color: #ED48BA;margin-right:5px" onclick="changeBodyBg('#ED48BA'); changeBtn('#0392BF');"></button>
                         <button style="background-color: #FBEC06;margin-right:5px" onclick="changeBodyBg('#FBEC06');"></button>
                         <button style="background-color: #B3D4E0;margin-right:5px" onclick="changeBodyBg('#B3D4E0');"></button>
                     </div>
                     <div class="product-dropdown">
                         Product Size <select> Choose Color </select>
                     </div>
-                    <div class="product-order">
-                        <button>Add To Cart</button>
+                    <div class="product-order" >
+                        <button id="subBtn"><a href="#">Add To Cart</a></button>
                     </div>
                 </div>
             </div>
